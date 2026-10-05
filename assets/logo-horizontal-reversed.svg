@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 120" width="640" height="120" role="img" aria-label="TECXIA × WAHSUN 横版标志 · 反白">
+  <g fill="#F7F2E9" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="600">
+    <text x="6" y="76" letter-spacing="7.9" textLength="240" lengthAdjust="spacing">TECXIA</text>
+    <text x="634" y="76" text-anchor="end" letter-spacing="7.9" textLength="240" lengthAdjust="spacing">WAHSUN</text>
+  </g>
+  <g transform="translate(282.4,26.4) scale(0.56)" stroke="#F7F2E9" stroke-width="16" stroke-linecap="butt" fill="none">
+    <path d="M19 19 L101 101"/>
+    <path d="M101 19 L19 101"/>
+    <path d="M3.4 34.6 L34.6 3.4"/>
+    <path d="M85.4 3.4 L116.6 34.6"/>
+    <path d="M3.4 85.4 L34.6 116.6"/>
+    <path d="M85.4 116.6 L116.6 85.4"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 236" width="360" height="236" role="img" aria-label="TECXIA × WAHSUN 竖版标志">
+  <g transform="translate(144,28) scale(0.6)" stroke="#1A1510" stroke-width="16" stroke-linecap="butt" fill="none">
+    <path d="M19 19 L101 101"/>
+    <path d="M101 19 L19 101"/>
+    <path d="M3.4 34.6 L34.6 3.4"/>
+    <path d="M85.4 3.4 L116.6 34.6"/>
+    <path d="M3.4 85.4 L34.6 116.6"/>
+    <path d="M85.4 116.6 L116.6 85.4"/>
+  </g>
+  <g fill="#1A1510" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="600">
+    <text x="144" y="178" text-anchor="end" letter-spacing="5.4" textLength="120" lengthAdjust="spacing">TECXIA</text>
+    <text x="216" y="178" letter-spacing="5.4" textLength="120" lengthAdjust="spacing">WAHSUN</text>
+  </g>
+  <g transform="translate(166,155.3) scale(0.2)" stroke="#1A1510" stroke-width="16" stroke-linecap="butt" fill="none">
+    <path d="M19 19 L101 101"/>
+    <path d="M101 19 L19 101"/>
+    <path d="M3.4 34.6 L34.6 3.4"/>
+    <path d="M85.4 3.4 L116.6 34.6"/>
+    <path d="M3.4 85.4 L34.6 116.6"/>
+    <path d="M85.4 116.6 L116.6 85.4"/>
+  </g>
+</svg>

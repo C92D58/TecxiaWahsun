@@ -1,0 +1,23 @@
+:root{
+  /* TECXIA × WAHSUN — Design Tokens v1.0 */
+  --tw-ink:#1A1510;
+  --tw-ink-soft:#4F4638;
+  --tw-muted:#8A7F6D;
+  --tw-paper:#F7F2E9;
+  --tw-paper-deep:#EFE6D6;
+  --tw-line:#E0D5C2;
+  --tw-signal:#C25A2E;
+  --tw-signal-deep:#9C4520;
+  --tw-night:#151009;
+  --tw-night-soft:#241C12;
+  --tw-paper-on-night:#F1EADC;
+
+  --tw-font-sans:-apple-system,'SF Pro Display','Helvetica Neue','PingFang SC','Noto Sans SC',Arial,sans-serif;
+  --tw-font-mono:'SF Mono',ui-monospace,Menlo,'JetBrains Mono',Consolas,'PingFang SC',monospace;
+
+  --tw-track-caps:.18em;
+  --tw-radius-s:8px;
+  --tw-radius-m:14px;
+  --tw-radius-l:22px;
+  --tw-radius-xl:32px;
+}

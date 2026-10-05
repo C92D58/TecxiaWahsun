@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="TECXIA × WAHSUN">
+  <rect width="64" height="64" rx="14" fill="#1A1510"/>
+  <g transform="translate(2,2) scale(0.5)" stroke="#F7F2E9" stroke-width="16" stroke-linecap="butt" fill="none">
+    <path d="M19 19 L101 101"/>
+    <path d="M101 19 L19 101"/>
+    <path d="M3.4 34.6 L34.6 3.4"/>
+    <path d="M85.4 3.4 L116.6 34.6"/>
+    <path d="M3.4 85.4 L34.6 116.6"/>
+    <path d="M85.4 116.6 L116.6 85.4"/>
+  </g>
+</svg>

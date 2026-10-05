@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TECXIA × WAHSUN — 品牌规范</title>
+<meta name="description" content="TECXIA × WAHSUN 品牌规范：交记记号、标志组合、颜色、字体与应用。× 是设计记号，不是字母 x。">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+:root{
+  --ink:#1A1510; --ink2:#4F4638; --mut:#6E675A;
+  --paper:#F7F2E9; --paper2:#EFE6D6; --line:#E0D5C2;
+  --sig:#C25A2E; --sig2:#9C4520;
+  --night:#151009; --night2:#241C12; --pon:#F1EADC;
+  --sans:-apple-system,'SF Pro Display','PingFang SC','Noto Sans SC','Helvetica Neue',Arial,sans-serif;
+  --mono:'SF Mono',ui-monospace,Menlo,'JetBrains Mono',Consolas,monospace;
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);line-height:1.65;
+  -webkit-font-smoothing:antialiased;font-synthesis-weight:none;
+}
+::selection{background:var(--sig);color:var(--paper)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:#6E675A;text-transform:uppercase}
+h2{font-size:clamp(26px,3.6vw,38px);font-weight:600;letter-spacing:.01em;margin:.35em 0 .25em}
+.lead{color:var(--ink2);font-size:16.5px;max-width:62ch}
+hr.sep{border:0;border-top:1px solid var(--line);margin:0}
+section{padding:88px 0}
+section + section{border-top:1px solid var(--line)}
+
+/* 交记记号 */
+.tk{display:block;color:var(--ink)}
+.tk use{fill:none}
+
+/* 锁定组合（HTML 版） */
+.lockup{display:inline-flex;align-items:center;gap:.56em;font-weight:600;white-space:nowrap}
+.lockup .w{letter-spacing:.18em;margin-right:-.18em}
+.lockup .g{width:1.04em;height:1.04em;flex:none}
+.lockup.reverse{color:var(--pon)}
+.lockup.sm{font-size:15px}
+.lockup.md{font-size:22px}
+.lockup.lg{font-size:34px}
+.lockup.xl{font-size:clamp(28px,7.6vw,58px)}
+
+/* 顶部 */
+header.hero{padding:96px 0 88px;position:relative;overflow:hidden;min-height:88vh;display:flex;flex-direction:column}
+.hero-mark{display:block;width:104px;height:104px;color:var(--ink);margin:0 0 44px}
+.hero-mark path{stroke-dasharray:150;stroke-dashoffset:150;animation:draw 1.5s cubic-bezier(.6,.05,.2,1) forwards}
+.hero-mark path:nth-child(2){animation-delay:.25s}
+.hero-mark path:nth-child(3){animation-delay:.6s}
+.hero-mark path:nth-child(4){animation-delay:.68s}
+.hero-mark path:nth-child(5){animation-delay:.76s}
+.hero-mark path:nth-child(6){animation-delay:.84s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero-sub{margin-top:30px;color:var(--ink2);font-size:16px;max-width:56ch}
+.hero-meta{margin-top:auto;padding-top:22px;display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;border-top:1px solid var(--line)}
+
+/* 揭示动效 */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* 记号构造 */
+.build{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.build .cell{background:var(--paper2);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:18px;align-items:center}
+.build .cell .cap{font-size:12.5px;color:var(--ink2);text-align:center}
+.build .cell .tk{width:104px;height:104px}
+.build small{color:var(--mut)}
+
+.callout{
+  margin-top:34px;background:#fff;border:1px solid var(--line);border-radius:24px;
+  padding:30px 32px;display:flex;gap:26px;align-items:center;flex-wrap:wrap;
+}
+.callout .glyph{width:74px;height:74px;flex:none}
+.callout h3{margin:0 0 8px;font-size:20px;font-weight:600}
+.callout p{margin:0;color:var(--ink2);font-size:15px}
+.cmp{display:flex;gap:14px;margin-top:18px;flex-wrap:wrap}
+.cmp .card{border:1px solid var(--line);border-radius:16px;padding:14px 22px;font-weight:600;letter-spacing:.14em;font-size:17px;display:flex;align-items:center;gap:12px;background:var(--paper)}
+.cmp .ok{border-color:#3FAA7D44;background:#F0F7F2}
+.cmp .bad{opacity:.9}
+.cmp .bad .strike{color:var(--ink2)}
+.cmp .tag{font-family:var(--mono);font-size:10px;letter-spacing:.1em;padding:2px 8px;border-radius:99px;background:var(--paper2);color:var(--ink2)}
+.cmp .ok .tag{background:#DBEDE2;color:#2F7A57}
+.lx{font-family:Georgia,'Times New Roman',serif;font-style:italic;color:var(--sig2)}
+
+/* 锁定展示 */
+.lock-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.lock-grid .demo{border-radius:22px;padding:36px 30px;display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.lock-grid .on-paper{background:var(--paper2)}
+.lock-grid .on-night{background:var(--night)}
+.lock-grid .on-night .cap{color:var(--pon);opacity:.72}
+.lock-grid .cap{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6E675A}
+.lock-grid .on-night .tk,.lock-grid .on-night .lockup{color:var(--pon)}
+.lock-wide{grid-column:1/-1}
+.sizes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;align-items:start;margin-top:26px}
+.sizes .s{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.sizes .tier{display:flex;align-items:center;height:56px}
+.sizes .s small{font-family:var(--mono);font-size:10.5px;color:#6E675A}
+.sizes-note{font-family:var(--mono);font-size:10.5px;color:#6E675A;margin-top:20px}
+.clear-demo{position:relative;margin-top:30px}
+.clear-demo .frame{border:1px solid #C9BBA4;border-radius:10px;padding:48px;display:inline-block;position:relative}
+.clear-demo .inner{border:1px dashed var(--sig);border-radius:6px;padding:12px 18px;display:inline-block;position:relative}
+.lab-out{position:absolute;bottom:12px;left:16px;font-family:var(--mono);font-size:9.5px;color:#6E675A;letter-spacing:.1em}
+.lab-in{position:absolute;top:-8px;left:10px;background:var(--paper2);padding:0 6px;font-family:var(--mono);font-size:9.5px;color:var(--sig2);letter-spacing:.1em}
+.dim-h{position:absolute;left:6px;top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:10px;color:var(--sig2);background:var(--paper2);padding:2px 0;letter-spacing:0}
+.clear-note{color:#6E675A;font-size:12.5px;margin-top:10px}
+
+/* 颜色 */
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+.sw{border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.sw .chip{height:110px}
+.sw .meta{padding:14px 16px 16px}
+.sw .nm{font-weight:600;font-size:14.5px}
+.sw .hx{font-family:var(--mono);font-size:11.5px;color:var(--mut);margin-top:2px}
+.sw .us{font-size:12px;color:var(--ink2);margin-top:8px;line-height:1.5}
+.ratio{display:flex;height:12px;border-radius:99px;overflow:hidden;margin-top:26px}
+.ratio i{display:block;height:100%}
+.ratio-note{display:flex;gap:22px;margin-top:12px;flex-wrap:wrap;color:var(--ink2);font-size:12.5px}
+
+/* 字体 */
+.type-row{display:grid;grid-template-columns:180px 1fr;gap:26px;padding:26px 0;border-top:1px solid var(--line);align-items:baseline}
+.type-row:first-of-type{border-top:0}
+.type-row .label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--mut);text-transform:uppercase}
+.type-display{font-size:clamp(26px,4vw,44px);font-weight:600;letter-spacing:.18em;margin-right:-.18em}
+.type-body{font-size:16px;color:var(--ink2)}
+.type-mono{font-family:var(--mono);font-size:13.5px;color:var(--ink)}
+
+/* 应用 */
+.apps{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.app-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:18px}
+.app-card .cap{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--mut);text-transform:uppercase}
+.app-card.wide{grid-column:1/-1}
+.app-foot{background:var(--night);border-radius:16px;padding:20px 22px;display:flex;flex-direction:column;gap:10px;align-items:center}
+.app-foot .ver{color:var(--pon);opacity:.7;font-size:12px}
+.app-foot .cr{color:var(--pon);opacity:.62;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em}
+.mini-receipt{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-family:var(--mono);font-size:11.5px;color:var(--ink);box-shadow:0 10px 26px -18px rgba(26,21,16,.35)}
+.mini-receipt .center{text-align:center}
+.mini-receipt .bk{margin:12px 0;font-size:22px;letter-spacing:2px;line-height:1;overflow:hidden;white-space:nowrap;color:var(--ink)}
+.sig{display:flex;gap:16px;align-items:center;background:var(--paper);border-radius:14px;padding:18px}
+.sig .av{width:58px;height:58px;border-radius:16px;overflow:hidden;flex:none}
+.sig .nm{font-weight:600}
+.sig .role{color:var(--ink2);font-size:13px}
+.sig .ct{font-family:var(--mono);font-size:11px;color:var(--mut);margin-top:4px}
+.icons-demo{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.icons-demo .ic{display:flex;flex-direction:column;gap:8px;align-items:center;font-family:var(--mono);font-size:10px;color:var(--mut)}
+.icons-demo .sq{width:76px;height:76px;border-radius:19px;overflow:hidden}
+.icons-demo .ci{width:76px;height:76px;border-radius:50%;overflow:hidden}
+.cards-demo{display:flex;gap:20px;flex-wrap:wrap}
+.bcard{width:300px;height:180px;border-radius:14px;position:relative;overflow:hidden;box-shadow:0 16px 40px -24px rgba(26,21,16,.45)}
+.bcard .pad{position:absolute;inset:22px}
+.bcard.front{background:var(--paper);border:1px solid var(--line)}
+.bcard.back{background:var(--night)}
+.bcard.back .tk{position:absolute;left:50%;top:50%;width:74px;height:74px;transform:translate(-50%,-50%);color:var(--pon)}
+.bcard .tl{font-size:2.5px;color:transparent}
+.bcard .tag{position:absolute;left:22px;bottom:18px;font-family:var(--mono);font-size:9.5px;color:var(--mut);letter-spacing:.1em}
+.bcard .lnk{position:absolute;right:22px;bottom:18px;font-family:var(--mono);font-size:9.5px;color:var(--mut);letter-spacing:.08em}
+.wm{position:relative;border-radius:18px;background:var(--paper);border:1px solid var(--line);height:170px;overflow:hidden}
+.wm .pat{position:absolute;inset:0;background-image:url(assets/pattern-cross.svg);background-size:85px 85px;opacity:.9}
+.wm .txt{position:absolute;left:22px;bottom:16px;font-family:var(--mono);font-size:10.5px;color:#6E675A}
+.wm .big{position:absolute;right:22px;top:20px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.wm .big small{font-family:var(--mono);font-size:9.5px;color:#6E675A;letter-spacing:.1em}
+
+/* 禁用 */
+.donts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.dont{border:1px solid var(--line);border-radius:20px;background:#fff;padding:22px;display:flex;flex-direction:column;gap:14px}
+.dont .demo{height:96px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:var(--paper);overflow:hidden}
+.dont .bad{color:var(--sig);font-weight:700;font-size:13px;display:flex;gap:8px;align-items:center}
+.dont .why{font-size:12.5px;color:var(--ink2)}
+.strike{position:relative;font-weight:600;letter-spacing:.14em}
+.strike::after{content:"";position:absolute;left:-4px;right:-4px;top:54%;height:2px;background:var(--sig);transform:rotate(-7deg)}
+.grad{background:linear-gradient(120deg,#C25A2E,#7A3BD6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.squish{transform:scaleX(1.6)}
+.spinner-demo{width:70px;height:70px;display:flex;align-items:center;justify-content:center;border-radius:16px;background:var(--night)}
+.spinner-demo .tk{color:var(--pon);width:44px;height:44px;transform:rotate(18deg)}
+
+/* 资产 */
+.assets{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.asset-row{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-top:1px solid var(--line);font-size:14px}
+.asset-row:first-child,.asset-row:nth-child(2){border-top:0}
+.asset-row a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;font-weight:500}
+.asset-row a:hover{border-bottom-color:var(--sig);color:var(--sig2)}
+.asset-row .sz{font-family:var(--mono);font-size:11px;color:var(--mut)}
+
+/* 页脚 */
+footer{padding:72px 0 84px;border-top:1px solid var(--line)}
+.foot-inner{display:flex;flex-direction:column;gap:20px;align-items:center;text-align:center}
+.foot-cr{font-family:var(--mono);font-size:11.5px;color:var(--mut);letter-spacing:.06em}
+
+@media (max-width:860px){
+  .build,.lock-grid,.swatches,.apps,.donts,.assets{grid-template-columns:1fr 1fr}
+  .swatches{grid-template-columns:1fr 1fr}
+  section{padding:64px 0}
+}
+@media (max-width:600px){
+  .build,.lock-grid,.apps,.donts,.assets,.swatches,.sizes{grid-template-columns:1fr}
+  .lock-wide{grid-column:auto}
+  .app-card.wide{grid-column:auto}
+  .type-row{grid-template-columns:1fr;gap:8px}
+  .wrap{padding:0 20px}
+  .sizes{gap:26px}
+  .hero-mark{width:76px;height:76px;margin:0 0 32px}
+}
+</style>
+</head>
+<body>
+
+<!-- 记号定义 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="tk" viewBox="-6 -6 132 132">
+    <g fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="butt">
+      <path d="M19 19 L101 101"/><path d="M101 19 L19 101"/>
+      <path d="M3.4 34.6 L34.6 3.4"/><path d="M85.4 3.4 L116.6 34.6"/>
+      <path d="M3.4 85.4 L34.6 116.6"/><path d="M85.4 116.6 L116.6 85.4"/>
+    </g>
+  </symbol>
+</svg>
+
+<main>
+
+<!-- 封面 -->
+<header class="hero wrap">
+  <svg class="hero-mark" viewBox="-8 -8 136 136" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="butt">
+      <path d="M19 19 L101 101"/><path d="M101 19 L19 101"/>
+      <path d="M3.4 34.6 L34.6 3.4"/><path d="M85.4 3.4 L116.6 34.6"/>
+      <path d="M3.4 85.4 L34.6 116.6"/><path d="M85.4 116.6 L116.6 85.4"/>
+    </g>
+  </svg>
+  <span class="lockup xl"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span>
+  <p class="hero-sub">工程与手作的联署。此规范定义标志、记号、颜色、字体与应用的统一用法 —— 品牌规范 v1.0 · 2026。</p>
+  <div class="hero-meta">
+    <span class="eyebrow">Brand Guidelines</span>
+    <span class="eyebrow">TECXIA.COM × WAHSUN.ORG</span>
+  </div>
+</header>
+
+<!-- 01 品牌 -->
+<section class="wrap" id="brand">
+  <div class="reveal">
+    <span class="eyebrow">01 · 品牌</span>
+    <h2>两方之名，一枚记号</h2>
+    <p class="lead">TECXIA 负责工程与产品，WAHSUN 负责设计与打磨。两者联署时使用同一枚交记记号连接 —— 它既是组合符号，也是出处证明：凡见此记号，即为此二者出品。</p>
+  </div>
+  <div class="build reveal" style="margin-top:38px">
+    <div class="cell">
+      <svg class="tk" viewBox="-6 -6 132 132"><path d="M19 19 L101 101 M101 19 L19 101" stroke="currentColor" stroke-width="16" fill="none" stroke-linecap="butt"/></svg>
+      <span class="cap">两笔斜划相交</span>
+    </div>
+    <div class="cell">
+      <svg class="tk" viewBox="-6 -6 132 132" style="opacity:.55"><use href="#tk"/></svg>
+      <span class="cap">四端各戴一道横杠</span>
+    </div>
+    <div class="cell" style="background:var(--night)">
+      <svg class="tk" viewBox="-6 -6 132 132" style="color:var(--pon)"><use href="#tk"/></svg>
+      <span class="cap" style="color:var(--pon);opacity:.75">完成的交记记号</span>
+    </div>
+  </div>
+</section>
+
+<!-- 02 记号规则 -->
+<section class="wrap" id="mark">
+  <div class="reveal">
+    <span class="eyebrow">02 · 交记记号</span>
+    <h2>「×」不是字母 <i class="lx">x</i></h2>
+    <p class="lead">组合中的连接符是一枚设计记号：两笔斜划相交，每端各有一道横杠。它不是打字机上的字母，也不是随便的叉号 —— 它是品牌资产本身。</p>
+    <div class="callout">
+      <svg class="tk glyph" viewBox="-6 -6 132 132"><use href="#tk"/></svg>
+      <div style="flex:1;min-width:260px">
+        <h3>使用规则</h3>
+        <p>图形环境（标志、界面、印刷）使用记号本体；纯文字环境使用乘号「×」（U+00D7）。<b>任何情况下不得用字母 <i class="lx">x</i> 替代。</b></p>
+        <div class="cmp">
+          <span class="card ok"><svg class="tk" style="width:15px;height:15px" viewBox="-6 -6 132 132"><use href="#tk"/></svg>TECXIA × WAHSUN <span class="tag">正确</span></span>
+          <span class="card bad">TECXIA <b class="strike">x</b> WAHSUN <span class="tag" style="color:var(--sig)">错误</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 标志组合 -->
+<section class="wrap" id="lockups">
+  <div class="reveal">
+    <span class="eyebrow">03 · 标志组合</span>
+    <h2>四种标准形态</h2>
+    <p class="lead">四种标准资产：横版、竖版、徽标与徽记（单独记号）；深底场景一律使用反白版本。</p>
+  </div>
+  <div class="lock-grid reveal" style="margin-top:34px">
+    <div class="demo on-paper lock-wide">
+      <span class="lockup lg"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span>
+      <span class="cap">横版 · logo-horizontal.svg</span>
+    </div>
+    <div class="demo on-paper">
+      <span class="lockup lg" style="flex-direction:column;gap:.35em">
+        <svg class="tk g" style="font-size:34px;width:2em;height:2em"><use href="#tk"/></svg>
+        <span style="display:inline-flex;align-items:center;gap:.5em"><span class="w">TECXIA</span><svg class="tk g" style="width:.62em;height:.62em"><use href="#tk"/></svg><span class="w">WAHSUN</span></span>
+      </span>
+      <span class="cap">竖版 · logo-vertical.svg</span>
+    </div>
+    <div class="demo on-paper">
+      <img src="assets/logo-badge.svg" alt="徽标" style="width:100%;max-width:300px;display:block">
+      <span class="cap">徽标 · logo-badge.svg</span>
+    </div>
+    <div class="demo on-paper">
+      <img src="assets/logo-monogram.svg" alt="徽记" style="width:76px;height:76px;display:block">
+      <span class="cap">徽记 · logo-monogram.svg</span>
+    </div>
+    <div class="demo on-night lock-wide">
+      <span class="lockup md reverse"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span>
+      <span class="cap">深底反白 · logo-horizontal-reversed.svg</span>
+    </div>
+  </div>
+
+  <div class="sizes reveal">
+    <div class="s"><span class="tier"><span class="lockup md"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span></span><small>≥ 22px · 标准</small></div>
+    <div class="s"><span class="tier"><span class="lockup sm"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span></span><small>15–22px · 最小</small></div>
+    <div class="s"><span class="tier"><svg class="tk" style="width:18px;height:18px" viewBox="-6 -6 132 132"><use href="#tk"/></svg></span><small>&lt; 15px · 仅徽记</small></div>
+  </div>
+  <p class="sizes-note reveal">“px” 以字标大写高度计，阶梯按各档下限示意；低于 15px 时，不再使用字标，只用徽记。</p>
+  <div class="clear-demo reveal">
+    <div class="frame">
+      <span class="lab-out">安全区</span>
+      <span class="lab-in">标志边界</span>
+      <span class="dim-h">↔ ½h</span>
+      <div class="inner">
+        <span class="lockup sm"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span>
+      </div>
+    </div>
+    <div class="clear-note">安全区：四周留白 ≥ 记号高度（h）的 ½；标志不与其他元素共用边界。</div>
+  </div>
+</section>
+
+<!-- 04 颜色 -->
+<section class="wrap" id="colors">
+  <div class="reveal">
+    <span class="eyebrow">04 · 颜色</span>
+    <h2>墨、纸与赤陶</h2>
+    <p class="lead">三种主色构成全部表达：暖墨为骨、米纸为底、赤陶点睛。克制使用强调色，宁可少，不可杂。</p>
+  </div>
+  <div class="swatches reveal" style="margin-top:34px">
+    <div class="sw"><div class="chip" style="background:#1A1510"></div><div class="meta"><div class="nm">墨 Ink</div><div class="hx">#1A1510</div><div class="us">主文字、标志主色（浅底）</div></div></div>
+    <div class="sw"><div class="chip" style="background:#F7F2E9;border-bottom:1px solid var(--line)"></div><div class="meta"><div class="nm">纸 Paper</div><div class="hx">#F7F2E9</div><div class="us">底色、反白元素（深底）</div></div></div>
+    <div class="sw"><div class="chip" style="background:#C25A2E"></div><div class="meta"><div class="nm">赤陶 Signal</div><div class="hx">#C25A2E</div><div class="us">强调、链接、点睛</div></div></div>
+    <div class="sw"><div class="chip" style="background:#151009"></div><div class="meta"><div class="nm">夜 Night</div><div class="hx">#151009</div><div class="us">深色模式底色</div></div></div>
+    <div class="sw"><div class="chip" style="background:#4F4638"></div><div class="meta"><div class="nm">墨·柔</div><div class="hx">#4F4638</div><div class="us">次级文字</div></div></div>
+    <div class="sw"><div class="chip" style="background:#8A7F6D"></div><div class="meta"><div class="nm">灰褐</div><div class="hx">#8A7F6D</div><div class="us">辅助文字、微文案</div></div></div>
+    <div class="sw"><div class="chip" style="background:#E0D5C2"></div><div class="meta"><div class="nm">细线</div><div class="hx">#E0D5C2</div><div class="us">分隔、描边</div></div></div>
+    <div class="sw"><div class="chip" style="background:#F1EADC"></div><div class="meta"><div class="nm">纸·夜</div><div class="hx">#F1EADC</div><div class="us">深色模式文字</div></div></div>
+  </div>
+  <div class="ratio reveal">
+    <i style="flex:70;background:#F7F2E9;border-right:1px solid var(--line)"></i>
+    <i style="flex:22;background:#1A1510"></i>
+    <i style="flex:8;background:#C25A2E"></i>
+  </div>
+  <div class="ratio-note reveal"><span>70% 纸底</span><span>22% 墨</span><span>8% 赤陶</span></div>
+</section>
+
+<!-- 05 字体 -->
+<section class="wrap" id="type">
+  <div class="reveal">
+    <span class="eyebrow">05 · 字体</span>
+    <h2>一横一竖，皆有出处</h2>
+    <p class="lead">西文用系统无衬线（SF Pro / Inter），标题大写宽字距；中文跟随系统（苹方 / Noto Sans SC）；技术性微文案使用等宽字体，呼应票据与打印机的质感。</p>
+  </div>
+  <div class="reveal" style="margin-top:28px">
+    <div class="type-row">
+      <span class="label">Display · 大写宽字距</span>
+      <span class="type-display">TECXIA × WAHSUN</span>
+    </div>
+    <div class="type-row">
+      <span class="label">Body · 正文</span>
+      <span class="type-body">凡见此记号，即为此二者出品。工程与手作不是两种气质，而是同一件作品的两面。</span>
+    </div>
+    <div class="type-row">
+      <span class="label">Mono · 微文案</span>
+      <span class="type-mono">© 2026 TECXIA × WAHSUN · ALL RIGHTS RESERVED</span>
+    </div>
+  </div>
+</section>
+
+<!-- 06 应用 -->
+<section class="wrap" id="apps">
+  <div class="reveal">
+    <span class="eyebrow">06 · 应用</span>
+    <h2>它在真实世界的模样</h2>
+    <p class="lead">应用页脚、小票页脚、邮件签名、头像、名片与纹样 —— 所有露出保持同一枚记号与同一句版权行。</p>
+  </div>
+  <div class="apps reveal" style="margin-top:34px">
+    <div class="app-card wide">
+      <span class="cap">应用页脚 · footer</span>
+      <div class="app-foot">
+        <span class="ver">小票工坊 v1.0</span>
+        <span class="lockup sm reverse"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span>
+        <span class="cr">© 2026 TECXIA × WAHSUN · 保留所有权利</span>
+      </div>
+    </div>
+    <div class="app-card">
+      <span class="cap">小票页脚 · receipt</span>
+      <div class="mini-receipt">
+        <div class="center">谢谢惠顾</div>
+        <div class="bk">▮▎▮▮▎▮▎▮▮▎▮▎▮▮▎▮▎▮▮▎▮▎▮▮▎▮▎▮▮▎▮▎</div>
+        <div class="center" style="color:var(--mut)">R-20261005-0901</div>
+        <div class="center" style="margin-top:10px;font-size:9.5px;color:var(--mut)">© 2026 TECXIA × WAHSUN</div>
+      </div>
+    </div>
+    <div class="app-card">
+      <span class="cap">邮件签名 · email</span>
+      <div class="sig">
+        <span class="av"><svg viewBox="0 0 512 512" style="width:100%;height:100%"><rect width="512" height="512" fill="#1A1510"/><g transform="translate(76,76) scale(3)" stroke="#F7F2E9" stroke-width="16" fill="none" stroke-linecap="butt"><path d="M19 19 L101 101"/><path d="M101 19 L19 101"/><path d="M3.4 34.6 L34.6 3.4"/><path d="M85.4 3.4 L116.6 34.6"/><path d="M3.4 85.4 L34.6 116.6"/><path d="M85.4 116.6 L116.6 85.4"/></g></svg></span>
+        <div>
+          <div class="nm">吕华顺</div>
+          <div class="role">设计 × 工程</div>
+          <div class="ct">x@wahsun.org · tecxia.com</div>
+        </div>
+      </div>
+    </div>
+    <div class="app-card">
+      <span class="cap">头像与图标 · avatar</span>
+      <div class="icons-demo">
+        <span class="ic"><span class="sq"><svg viewBox="0 0 512 512" style="width:100%;height:100%"><rect width="512" height="512" rx="114" fill="#1A1510"/><g transform="translate(76,76) scale(3)" stroke="#F7F2E9" stroke-width="16" fill="none" stroke-linecap="butt"><path d="M19 19 L101 101"/><path d="M101 19 L19 101"/><path d="M3.4 34.6 L34.6 3.4"/><path d="M85.4 3.4 L116.6 34.6"/><path d="M3.4 85.4 L34.6 116.6"/><path d="M85.4 116.6 L116.6 85.4"/></g></svg></span>徽记</span>
+        <span class="ic"><span class="ci"><svg viewBox="0 0 512 512" style="width:100%;height:100%"><rect width="512" height="512" fill="#F7F2E9"/><g transform="translate(76,76) scale(3)" stroke="#1A1510" stroke-width="16" fill="none" stroke-linecap="butt"><path d="M19 19 L101 101"/><path d="M101 19 L19 101"/><path d="M3.4 34.6 L34.6 3.4"/><path d="M85.4 3.4 L116.6 34.6"/><path d="M3.4 85.4 L34.6 116.6"/><path d="M85.4 116.6 L116.6 85.4"/></g></svg></span>圆头像</span>
+        <span class="ic"><span class="sq" style="border-radius:17px"><svg viewBox="0 0 64 64" style="width:100%;height:100%"><rect width="64" height="64" rx="14" fill="#1A1510"/><g transform="translate(2,2) scale(0.5)" stroke="#F7F2E9" stroke-width="16" stroke-linecap="butt" fill="none"><path d="M19 19 L101 101"/><path d="M101 19 L19 101"/><path d="M3.4 34.6 L34.6 3.4"/><path d="M85.4 3.4 L116.6 34.6"/><path d="M3.4 85.4 L34.6 116.6"/><path d="M85.4 116.6 L116.6 85.4"/></g></svg></span>16px 优化</span>
+      </div>
+    </div>
+    <div class="app-card wide">
+      <span class="cap">名片 · business card</span>
+      <div class="cards-demo">
+        <div class="bcard front">
+          <div class="pad" style="display:flex;flex-direction:column;justify-content:space-between">
+            <span class="lockup sm"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span>
+            <span style="font-family:var(--mono);font-size:10px;color:var(--mut);letter-spacing:.14em">工程 × 手作 · CRAFTED END TO END</span>
+          </div>
+          <span class="lnk">TECXIA.COM · WAHSUN.ORG</span>
+        </div>
+        <div class="bcard back">
+          <svg class="tk" viewBox="-6 -6 132 132"><use href="#tk"/></svg>
+          <span class="lnk" style="color:#F1EADC;opacity:.6;right:auto;left:50%;transform:translateX(-50%);bottom:16px">© 2026 TECXIA × WAHSUN</span>
+        </div>
+      </div>
+    </div>
+    <div class="app-card wide">
+      <span class="cap">纹样 · watermark pattern</span>
+      <div class="wm">
+        <div class="pat"></div>
+        <div class="big"><svg class="tk" style="width:56px;height:56px" viewBox="-6 -6 132 132"><use href="#tk"/></svg><small>满强度 100%</small></div>
+        <span class="txt">交记纹样：单色 · 屏幕 6% / 印刷 8% · 仅作底纹，不压字</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 禁用 -->
+<section class="wrap" id="donts">
+  <div class="reveal">
+    <span class="eyebrow">07 · 禁用</span>
+    <h2>不要这样做</h2>
+  </div>
+  <div class="donts reveal" style="margin-top:30px">
+    <div class="dont">
+      <div class="demo"><span style="font-size:16px;font-weight:600;letter-spacing:.14em">TECXIA <b class="strike">x</b> WAHSUN</span></div>
+      <span class="bad">✕ 用字母 <i class="lx">x</i> 连接</span>
+      <span class="why">连接符只能是交记记号，或以乘号「×」代替。</span>
+    </div>
+    <div class="dont">
+      <div class="demo"><span class="grad" style="font-size:16px;font-weight:600;letter-spacing:.14em">TECXIA × WAHSUN</span></div>
+      <span class="bad">✕ 渐变与彩色装饰</span>
+      <span class="why">记号与字标只用规范色，保持墨质感。</span>
+    </div>
+    <div class="dont">
+      <div class="demo"><span class="squish" style="display:inline-block"><svg class="tk" style="width:64px;height:44px" viewBox="-6 -6 132 132"><use href="#tk"/></svg></span></div>
+      <span class="bad">✕ 拉伸变形</span>
+      <span class="why">等比缩放，严禁压扁或拉长。</span>
+    </div>
+    <div class="dont">
+      <div class="demo"><svg class="tk" style="width:64px;height:64px;color:#2F7A57" viewBox="-6 -6 132 132"><use href="#tk"/></svg></div>
+      <span class="bad">✕ 规范外的颜色</span>
+      <span class="why">仅使用墨、纸、赤陶（及夜底色系）。</span>
+    </div>
+    <div class="dont">
+      <div class="demo" style="background:#B9A98F"><svg class="tk" style="width:64px;height:64px;color:#C9BBA4" viewBox="-6 -6 132 132"><use href="#tk"/></svg></div>
+      <span class="bad">✕ 低对比背景</span>
+      <span class="why">深底用反白版，浅底用墨版，保证对比度。</span>
+    </div>
+    <div class="dont">
+      <div class="demo"><span class="spinner-demo"><svg class="tk" viewBox="-6 -6 132 132"><use href="#tk"/></svg></span></div>
+      <span class="bad">✕ 旋转与加框装饰</span>
+      <span class="why">记号永远正置，不加描边、阴影或旋转。</span>
+    </div>
+  </div>
+</section>
+
+<!-- 08 资产 -->
+<section class="wrap" id="assets">
+  <div class="reveal">
+    <span class="eyebrow">08 · 资产</span>
+    <h2>下载与使用</h2>
+    <p class="lead">矢量源文件（SVG）可直接用于网页与产品；印刷与办公场景使用 assets/png/ 中的高分辨率版本。文字字标在正式制作时请转为外框。</p>
+  </div>
+  <div class="assets reveal" style="margin-top:26px">
+    <div>
+      <div class="asset-row"><a href="assets/logo-horizontal.svg">logo-horizontal.svg</a><span class="sz">横版 · 墨</span></div>
+      <div class="asset-row"><a href="assets/logo-horizontal-reversed.svg">logo-horizontal-reversed.svg</a><span class="sz">横版 · 反白</span></div>
+      <div class="asset-row"><a href="assets/logo-vertical.svg">logo-vertical.svg</a><span class="sz">竖版 · 墨</span></div>
+      <div class="asset-row"><a href="assets/logo-vertical-reversed.svg">logo-vertical-reversed.svg</a><span class="sz">竖版 · 反白</span></div>
+      <div class="asset-row"><a href="assets/logo-badge.svg">logo-badge.svg</a><span class="sz">徽标 · 深底</span></div>
+    </div>
+    <div>
+      <div class="asset-row"><a href="assets/logo-monogram.svg">logo-monogram.svg</a><span class="sz">徽记 · 深底</span></div>
+      <div class="asset-row"><a href="assets/logo-monogram-paper.svg">logo-monogram-paper.svg</a><span class="sz">徽记 · 纸底</span></div>
+      <div class="asset-row"><a href="assets/mark-cross.svg">mark-cross.svg</a><span class="sz">记号 · 墨</span></div>
+      <div class="asset-row"><a href="assets/mark-cross-paper.svg">mark-cross-paper.svg</a><span class="sz">记号 · 纸</span></div>
+      <div class="asset-row"><a href="assets/favicon.svg">favicon.svg</a><span class="sz">站点图标</span></div>
+      <div class="asset-row"><a href="assets/pattern-cross.svg">pattern-cross.svg</a><span class="sz">辅助纹样</span></div>
+    </div>
+  </div>
+  <p class="sizes-note reveal">另附 assets/png/（高分辨率 PNG · 透明底）与 applications/（名片、邮件签名模板）。</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span class="lockup md"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span>
+    <span class="foot-cr">© 2026 TECXIA × WAHSUN · 保留所有权利 · BRAND GUIDELINES V1.0</span>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((es) => {
+    for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+</script>
+</body>
+</html>
