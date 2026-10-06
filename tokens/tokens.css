@@ -1,5 +1,5 @@
 :root{
-  /* TECXIA × WAHSUN — Design Tokens v1.0 */
+  /* TECXIA × WAHSUN — Design Tokens v2.0 */
   --tw-ink:#1A1510;
   --tw-ink-soft:#4F4638;
   --tw-muted:#8A7F6D;
@@ -20,4 +20,6 @@
   --tw-radius-m:14px;
   --tw-radius-l:22px;
   --tw-radius-xl:32px;
+
+  /* 交记记号几何（相对名义尺寸 1）：inset .09 · 线宽 .13 · 短杠 .40 · 圆角 .026 */
 }

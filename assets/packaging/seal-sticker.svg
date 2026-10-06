@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="包装 · 封口贴">
+  <circle cx="120" cy="120" r="116" fill="#151009"/>
+  <circle cx="120" cy="120" r="103" fill="none" stroke="#F1EADC" stroke-width="1.5" opacity="0.28"/>
+  <g transform="translate(72.27,72.27) scale(0.9546)"><g stroke="#F7F2E9" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#F7F2E9"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
+</svg>

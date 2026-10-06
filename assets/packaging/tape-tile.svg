@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 72" width="280" height="72" role="img" aria-label="包装 · 胶带单元（可平铺）">
+  <rect width="280" height="72" fill="#E8DDC7"/>
+  <g transform="translate(31.51,21.51) scale(0.2898)"><g stroke="#1A1510" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
+  <text x="86" y="41" font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="12.5" letter-spacing="3.5" fill="#4F4638">TECXIA × WAHSUN</text>
+</svg>

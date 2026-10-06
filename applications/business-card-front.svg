@@ -1,26 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1063 638" width="1063" height="638" role="img" aria-label="TECXIA × WAHSUN 名片正面（90×54mm 模板）">
   <rect width="1063" height="638" fill="#F7F2E9"/>
-  <!-- 横版标志 -->
   <g transform="translate(64,78)">
-    <g fill="#1A1510" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="600">
-      <text x="5" y="70" letter-spacing="7.2" textLength="218" lengthAdjust="spacing">TECXIA</text>
-      <text x="574" y="70" text-anchor="end" letter-spacing="7.2" textLength="218" lengthAdjust="spacing">WAHSUN</text>
-    </g>
-    <g transform="translate(255.4,24) scale(0.51)" stroke="#1A1510" stroke-width="16" stroke-linecap="butt" fill="none">
-      <path d="M19 19 L101 101"/>
-      <path d="M101 19 L19 101"/>
-      <path d="M3.4 34.6 L34.6 3.4"/>
-      <path d="M85.4 3.4 L116.6 34.6"/>
-      <path d="M3.4 85.4 L34.6 116.6"/>
-      <path d="M85.4 116.6 L116.6 85.4"/>
-    </g>
+    <g fill="#1A1510" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="600"><text x="5" y="70" letter-spacing="7.2" textLength="218" lengthAdjust="spacing">TECXIA</text><text x="574" y="70" text-anchor="end" letter-spacing="7.2" textLength="218" lengthAdjust="spacing">WAHSUN</text></g>
+    <g transform="translate(264.90,30.00) scale(0.492)"><g stroke="#1A1510" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
   </g>
-  <!-- 信息 -->
   <g font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" fill="#1A1510">
     <text x="64" y="430" font-size="30" font-weight="600">吕华顺</text>
     <text x="64" y="470" font-size="19" fill="#4F4638">设计 × 工程 · TECXIA × WAHSUN</text>
   </g>
-  <!-- 底部技术行 -->
   <g font-family="'SF Mono', ui-monospace, Menlo, monospace" fill="#8A7F6D">
     <text x="64" y="562" font-size="15" letter-spacing="2">工程 × 手作 · CRAFTED END TO END</text>
     <text x="999" y="562" font-size="14" letter-spacing="1.5" text-anchor="end">TECXIA.COM · WAHSUN.ORG</text>

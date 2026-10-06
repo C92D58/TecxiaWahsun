@@ -1,10 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 132 132" width="132" height="132" role="img" aria-label="TECXIA × WAHSUN 交记记号（两笔斜划相交，四端各戴横杠）">
-  <g stroke="#1A1510" stroke-width="16" stroke-linecap="butt" fill="none">
-    <path d="M19 19 L101 101"/>
-    <path d="M101 19 L19 101"/>
-    <path d="M3.4 34.6 L34.6 3.4"/>
-    <path d="M85.4 3.4 L116.6 34.6"/>
-    <path d="M3.4 85.4 L34.6 116.6"/>
-    <path d="M85.4 116.6 L116.6 85.4"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 120 120" width="120" height="120" role="img" aria-label="TECXIA × WAHSUN 交记记号（两笔斜划相交，四端各戴圆角短槓 · 双 T 交叉）">
+  <g stroke="#1A1510" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g>
 </svg>

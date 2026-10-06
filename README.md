@@ -1,9 +1,9 @@
-# TECXIA × WAHSUN — 品牌包 v1.0
+# TECXIA × WAHSUN — 品牌包 v2.0
 
-TECXIA 与 WAHSUN 联署的完整品牌资产：标志、交记记号、色彩与字体令牌、应用模板与品牌规范手册。
+TECXIA 工作室与其设计署名 WAHSUN 的完整品牌资产：标志、交记记号、色彩与字体令牌、产品署名与包装、应用模板与品牌规范手册。
 
 > **铁律：「×」不是字母 x。**
-> 组合中的连接符是一枚设计记号（两笔斜划相交、四端各戴横杠），或文字环境中的乘号「×」（U+00D7）。**任何情况下不得用字母 x 替代** —— 详细信息见[规范手册](https://brand.tecxia.com)第 02 节。
+> 组合中的连接符是一枚设计记号（双 T 交叉：两笔斜划相交、四端各戴带微圆角的短杠），或文字环境中的乘号「×」（U+00D7）。**任何情况下不得用字母 x 替代** —— 详细信息见[规范手册](https://brand.tecxia.com)第 02 节。
 
 ## 目录
 
@@ -19,13 +19,19 @@ TecxiaWahsun/
 │   ├── logo-monogram.svg       # 徽记（深底）
 │   ├── logo-monogram-paper.svg # 徽记（纸底）
 │   ├── mark-cross.svg          # 交记记号（墨）
-│   ├── mark-cross-paper.svg    # 交记记号（纸）
+│   ├── mark-cross-paper.svg    # 交记记号（反白）
 │   ├── favicon.svg             # 站点图标（16px 优化）
 │   ├── pattern-cross.svg       # 辅助纹样（交记底纹）
+│   ├── packaging/              # 包装资产（v2 新增）
+│   │   ├── box.svg             # 邮寄盒
+│   │   ├── seal-sticker.svg    # 封口贴
+│   │   ├── tape-tile.svg       # 胶带单元（可平铺）
+│   │   ├── card-back.svg       # 随件卡
+│   │   └── bag.svg             # 纸袋
 │   └── png/                    # 高分辨率 PNG（透明底）
 ├── tokens/
 │   ├── tokens.css              # CSS 变量（--tw-*）
-│   └── tokens.json             # 设计令牌（机器可读）
+│   └── tokens.json             # 设计令牌（机器可读，含记号几何）
 ├── applications/
 │   ├── business-card-front.svg # 名片正面（90×54mm 模板）
 │   ├── business-card-back.svg  # 名片背面
@@ -42,9 +48,11 @@ TecxiaWahsun/
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 ```
 
-**颜色与字体令牌**：引入 `tokens/tokens.css`，使用 `--tw-*` 变量；构建工具链读取 `tokens/tokens.json`。
+**颜色与字体令牌**：引入 `tokens/tokens.css`，使用 `--tw-*` 变量；构建工具链读取 `tokens/tokens.json`（含交记记号几何）。
 
 **印刷 / 办公**：使用 `assets/png/` 高分辨率版本（2560px 级），或直接将 SVG 交付印厂（字标转外框后输出）。
+
+**包装**：`assets/packaging/` 内为邮寄盒、封口贴、胶带单元与随件卡；胶带单元可直接平铺；封口贴与随件卡为 300dpi 级模板。
 
 **名片与邮件**：`applications/` 内为 300dpi 级 SVG 模板与签名 HTML 源码，按注释替换个人信息即可。
 
@@ -60,6 +68,9 @@ TecxiaWahsun/
 | 中文 | 苹方 / Noto Sans SC |
 | 微文案等宽 | SF Mono / Menlo |
 | 标题字距 | 0.18em |
+| 交记记号 | 两笔斜划相交 + 四端圆角短杠（双 T 交叉）· inset 9% · 线宽 13% · 短杠 40% · 圆角 2.6% |
+| 应用内署名 | `Design ⟨交记记号⟩ WAHSUN` |
+| 版权行 | `© 2026 TECXIA × WAHSUN · 保留所有权利` |
 | 字标最小尺寸 | 15px（字标大写高度）；更小仅用徽记 |
 | 安全区 | 四周留白 ≥ 记号高度的 ½ |
 
@@ -69,4 +80,4 @@ TecxiaWahsun/
 
 ---
 
-*TECXIA × WAHSUN — brand package v1.0. The conjunction is the hand-drawn cross-mark glyph or "×" (U+00D7); never the letter x. Live handbook: https://brand.tecxia.com*
+*TECXIA × WAHSUN — brand package v2.0. The conjunction is the cross-mark glyph (two crossed strokes, four round-cornered end bars) or "×" (U+00D7); never the letter x. Live handbook: https://brand.tecxia.com*

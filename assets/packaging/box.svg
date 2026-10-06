@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" role="img" aria-label="包装 · 邮寄盒">
+  <ellipse cx="320" cy="378" rx="228" ry="13" fill="#1A1510" opacity="0.08"/>
+  <rect x="120" y="70" width="400" height="290" rx="10" fill="#F2EADA" stroke="#DFD3BE" stroke-width="2"/>
+  <line x1="120" y1="150" x2="520" y2="150" stroke="#DFD3BE" stroke-width="2"/>
+  <rect x="295" y="70" width="50" height="80" fill="#E7DBC3" opacity="0.9"/>
+  <g transform="translate(264.60,189.60) scale(1.108)"><g stroke="#1A1510" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
+  <text x="320" y="338" text-anchor="middle" font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="15" letter-spacing="4" fill="#4F4638">TECXIA × WAHSUN</text>
+</svg>
