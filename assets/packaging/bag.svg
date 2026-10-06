@@ -1,8 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" role="img" aria-label="包装 · 手提纸袋">
-  <ellipse cx="320" cy="378" rx="200" ry="12" fill="#1A1510" opacity="0.08"/>
-  <path d="M235 132 C235 62, 405 62, 405 132" fill="none" stroke="#6E675A" stroke-width="7" stroke-linecap="round"/>
-  <rect x="150" y="130" width="340" height="28" fill="#E3D7BF" stroke="#D8CBB2" stroke-width="2"/>
-  <rect x="150" y="158" width="340" height="206" fill="#EFE5D2" stroke="#D8CBB2" stroke-width="2"/>
-  <g transform="translate(268.86,196.86) scale(1.0228)"><g stroke="#1A1510" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
-  <text x="320" y="342" text-anchor="middle" font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="14" letter-spacing="4" fill="#4F4638">TECXIA.COM</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 540" width="680" height="540" role="img" aria-label="包装 · 手提纸袋">
+  <ellipse cx="330" cy="486" rx="185" ry="11" fill="#1A1510" opacity="0.11"/>
+  <path d="M240 196 C240 114 420 114 420 196" fill="none" stroke="#8A7F6D" stroke-width="4" stroke-linecap="round" opacity="0.42"/>
+  <path d="M260 196 C260 140 400 140 400 196" fill="none" stroke="#6E675A" stroke-width="6.5" stroke-linecap="round"/>
+  <path d="M170 195 Q170 180 185 180 L475 180 Q490 180 490 195 L490 210 L170 210 Z" fill="#E1D2B4" stroke="#CFBFA2" stroke-width="2"/>
+  <circle cx="260" cy="187" r="5.6" fill="none" stroke="#F5EFE3" stroke-width="1.3" opacity="0.75"/>
+  <circle cx="260" cy="187" r="3.6" fill="#6E675A" opacity="0.85"/>
+  <circle cx="400" cy="187" r="5.6" fill="none" stroke="#F5EFE3" stroke-width="1.3" opacity="0.75"/>
+  <circle cx="400" cy="187" r="3.6" fill="#6E675A" opacity="0.85"/>
+  <rect x="170" y="210" width="320" height="260" fill="#ECE0C8" stroke="#CDBB9E" stroke-width="2"/>
+  <rect x="172" y="210" width="50" height="260" fill="#E5D8BD"/>
+  <rect x="438" y="210" width="50" height="260" fill="#E5D8BD"/>
+  <line x1="222" y1="210" x2="222" y2="470" stroke="#D3C3A3" stroke-width="1.5" opacity="0.85"/>
+  <line x1="438" y1="210" x2="438" y2="470" stroke="#D3C3A3" stroke-width="1.5" opacity="0.85"/>
+  <g transform="translate(285.68,277.68) scale(0.8865)"><g stroke="#1A1510" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
+  <text x="330" y="417" text-anchor="middle" font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="13" letter-spacing="3.5" fill="#4F4638">TECXIA × WAHSUN</text>
 </svg>

@@ -161,14 +161,18 @@ header.hero{padding:96px 0 88px;position:relative;overflow:hidden;min-height:88v
 .icons-demo .ic{display:flex;flex-direction:column;gap:8px;align-items:center;font-family:var(--mono);font-size:10px;color:var(--mut)}
 .icons-demo .sq{width:76px;height:76px;border-radius:19px;overflow:hidden}
 .icons-demo .ci{width:76px;height:76px;border-radius:50%;overflow:hidden}
-.cards-demo{display:flex;gap:20px;flex-wrap:wrap}
+.cards-demo{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start}
 .bcard{width:300px;height:180px;border-radius:14px;position:relative;overflow:hidden;box-shadow:0 16px 40px -24px rgba(26,21,16,.45)}
 .bcard .pad{position:absolute;inset:22px}
 .bcard.front{background:var(--paper);border:1px solid var(--line)}
 .bcard.back{background:var(--night)}
 .bcard.back .tk{position:absolute;left:50%;top:50%;width:74px;height:74px;transform:translate(-50%,-50%);color:var(--pon)}
-.bcard .tag{position:absolute;left:22px;bottom:18px;font-family:var(--mono);font-size:9.5px;color:var(--mut);letter-spacing:.1em}
 .bcard .lnk{position:absolute;right:22px;bottom:18px;font-family:var(--mono);font-size:9.5px;color:var(--mut);letter-spacing:.08em}
+.bcard .vnm{font-size:13px;font-weight:600;line-height:1.3}
+.bcard .vrole{font-size:9.5px;color:var(--ink2);margin-top:3px;letter-spacing:.04em}
+.bcard .vfoot{display:flex;justify-content:space-between;align-items:flex-end;gap:10px}
+.bcard .vct{font-family:var(--mono);font-size:8px;color:var(--mut);line-height:1.9;white-space:nowrap}
+.bcard .vtag{font-family:var(--mono);font-size:7.5px;color:var(--mut);letter-spacing:.06em;white-space:nowrap}
 
 /* 产品包装 */
 .pkg-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
@@ -177,18 +181,21 @@ header.hero{padding:96px 0 88px;position:relative;overflow:hidden;min-height:88v
 .pkg-card.wide{grid-column:1/-1}
 .pkg-fig{border-radius:16px;background:var(--paper);border:1px solid var(--line);padding:26px;display:flex;align-items:center;justify-content:center;min-height:240px}
 .pkg-fig svg{max-width:100%;height:auto}
+.pkg-note{font-family:var(--mono);font-size:10px;color:var(--mut);letter-spacing:.08em;margin-top:-6px}
 .tape-fig .strip{filter:drop-shadow(0 12px 18px rgba(26,21,16,.12))}
-.mini-cards{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
-.mini-card{width:158px;height:98px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;box-shadow:0 12px 28px -20px rgba(26,21,16,.4)}
+.mini-cards{display:flex;gap:34px;flex-wrap:wrap;justify-content:center}
+.mini-col{display:flex;flex-direction:column;gap:9px;align-items:center}
+.mini-lab{font-family:var(--mono);font-size:9px;letter-spacing:.14em;color:var(--mut)}
+.mini-card{width:200px;height:126px;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;box-shadow:0 14px 30px -20px rgba(26,21,16,.45)}
 .mini-card.mcf{background:var(--paper);border:1px solid var(--line)}
 .mini-card.mcb{background:var(--night)}
-.mini-card.mcf .tk{width:40px;height:40px}
-.mini-card .mcf-t{font-family:var(--mono);font-size:9px;letter-spacing:.16em;color:var(--mut)}
-.mini-card .mcf-s{font-size:10.5px;color:var(--ink2)}
-.mini-card.mcb .mcb-row{color:var(--pon);font-size:9px;font-weight:500;letter-spacing:.12em;display:inline-flex;align-items:center;gap:5px}
-.mini-card.mcb .mcb-row .tk{width:9px;height:9px;color:var(--pon)}
-.mini-card.mcb .mcb-sn{font-family:var(--mono);font-size:7.5px;color:var(--pon);opacity:.62;letter-spacing:.08em;text-align:center;line-height:1.7}
-.mini-card.mcb .mcb-cr{font-family:var(--mono);font-size:6.5px;color:var(--pon);opacity:.42;letter-spacing:.06em}
+.mini-card.mcf .tk{width:52px;height:52px}
+.mini-card .mcf-t{font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;color:var(--mut)}
+.mini-card .mcf-s{font-size:12px;color:var(--ink2)}
+.mini-card.mcb .mcb-row{color:var(--pon);font-size:10px;font-weight:500;letter-spacing:.12em;display:inline-flex;align-items:center;gap:6px}
+.mini-card.mcb .mcb-row .tk{width:10px;height:10px;color:var(--pon)}
+.mini-card.mcb .mcb-sn{font-family:var(--mono);font-size:8px;color:var(--pon);opacity:.62;letter-spacing:.08em;text-align:center;line-height:1.9}
+.mini-card.mcb .mcb-cr{font-family:var(--mono);font-size:7px;color:var(--pon);opacity:.42;letter-spacing:.06em}
 .wm{position:relative;border-radius:18px;background:var(--paper);border:1px solid var(--line);height:170px;overflow:hidden}
 .wm .pat{position:absolute;inset:0;background-image:url(assets/pattern-cross.svg);background-size:85px 85px;opacity:.9}
 .wm .txt{position:absolute;left:22px;bottom:16px;font-family:var(--mono);font-size:10.5px;color:#6E675A}
@@ -255,7 +262,9 @@ footer{padding:72px 0 84px;border-top:1px solid var(--line)}
   </symbol>
   <pattern id="tapepat" x="0" y="36" width="280" height="72" patternUnits="userSpaceOnUse">
     <rect width="280" height="72" fill="#E8DDC7"/>
-    <g transform="translate(31.50,21.50) scale(0.2898)">
+    <line x1="0" y1="1" x2="280" y2="1" stroke="#D8CBB2" stroke-width="1.5" opacity="0.7"/>
+    <line x1="0" y1="71" x2="280" y2="71" stroke="#D8CBB2" stroke-width="1.5" opacity="0.7"/>
+    <g transform="translate(32.36,22.36) scale(0.2728)">
       <g fill="none" stroke="#1A1510" stroke-width="13" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g>
       <g fill="#1A1510">
         <rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/>
@@ -264,7 +273,7 @@ footer{padding:72px 0 84px;border-top:1px solid var(--line)}
         <rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/>
       </g>
     </g>
-    <text x="86" y="41" font-family="'SF Mono',ui-monospace,Menlo,monospace" font-size="12.5" letter-spacing="3.5" fill="#4F4638">TECXIA × WAHSUN</text>
+    <text x="88" y="41.5" font-family="'SF Mono',ui-monospace,Menlo,monospace" font-size="12" letter-spacing="3.2" fill="#4F4638">TECXIA × WAHSUN</text>
   </pattern>
 </svg>
 
@@ -284,7 +293,7 @@ footer{padding:72px 0 84px;border-top:1px solid var(--line)}
     </g>
   </svg>
   <span class="lockup xl"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span>
-  <p class="hero-sub">TECXIA 是一家独立网络工作室，从事软件开发设计与网站设计制作；WAHSUN 是它的设计署名。本规范定义两者联署时标志、记号、颜色、字体、产品署名与包装的统一用法 —— 品牌规范 v2.0 · 2026。</p>
+  <p class="hero-sub">TECXIA 是一家独立网络工作室，从事软件开发设计与网站设计制作；WAHSUN 是它的设计署名。本规范定义两者联署时标志、记号、颜色、字体、产品署名与包装的统一用法 —— 品牌规范 v2.1 · 2026。</p>
   <div class="hero-meta">
     <span class="eyebrow">Brand Guidelines</span>
     <span class="eyebrow">TECXIA.COM × WAHSUN.ORG</span>
@@ -500,15 +509,22 @@ footer{padding:72px 0 84px;border-top:1px solid var(--line)}
         <div class="bcard front">
           <div class="pad" style="display:flex;flex-direction:column;justify-content:space-between">
             <span class="lockup sm"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span>
-            <span style="font-family:var(--mono);font-size:10px;color:var(--mut);letter-spacing:.14em">工程 × 手作 · CRAFTED END TO END</span>
+            <div>
+              <div class="vnm">吕华顺</div>
+              <div class="vrole">设计 × 工程</div>
+            </div>
+            <div class="vfoot">
+              <span class="vct">x@wahsun.org<br>tecxia.com · wahsun.org</span>
+              <span class="vtag">工程 × 手作</span>
+            </div>
           </div>
-          <span class="lnk">TECXIA.COM · WAHSUN.ORG</span>
         </div>
         <div class="bcard back">
           <svg class="tk" viewBox="-10 -10 120 120"><use href="#tk"/></svg>
           <span class="lnk" style="color:#F1EADC;opacity:.6;right:auto;left:50%;transform:translateX(-50%);bottom:16px">© 2026 TECXIA × WAHSUN</span>
         </div>
       </div>
+      <span class="pkg-note">90×54mm · 350g 米白卡 · 单色双面（背面夜黑专色）</span>
     </div>
   </div>
 </section>
@@ -525,25 +541,42 @@ footer{padding:72px 0 84px;border-top:1px solid var(--line)}
     <div class="pkg-card">
       <span class="cap">邮寄盒 · mailer box</span>
       <div class="pkg-fig">
-        <svg viewBox="0 0 640 420" style="width:100%;max-width:400px" role="img" aria-label="邮寄盒">
-          <ellipse cx="320" cy="378" rx="228" ry="13" fill="#1A1510" opacity="0.08"/>
-          <rect x="120" y="70" width="400" height="290" rx="10" fill="#F2EADA" stroke="#DFD3BE" stroke-width="2"/>
-          <line x1="120" y1="150" x2="520" y2="150" stroke="#DFD3BE" stroke-width="2"/>
-          <rect x="295" y="70" width="50" height="80" fill="#E7DBC3" opacity="0.9"/>
-          <g transform="translate(264.60,194.60) scale(1.108)"><g fill="none" stroke="#1A1510" stroke-width="13" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
-          <text x="320" y="338" text-anchor="middle" font-family="'SF Mono',ui-monospace,Menlo,monospace" font-size="15" letter-spacing="4" fill="#4F4638">TECXIA × WAHSUN</text>
+        <svg viewBox="0 0 680 540" style="width:100%;max-width:460px" role="img" aria-label="邮寄盒">
+          <ellipse cx="346" cy="487" rx="242" ry="15" fill="#1A1510" opacity="0.10"/>
+          <ellipse cx="320" cy="477" rx="170" ry="8" fill="#1A1510" opacity="0.10"/>
+          <path d="M130 210 L226 134 L546 134 L450 210 Z" fill="#F7F0E2" stroke="#D9CCB4" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M450 210 L546 134 L546 394 L450 470 Z" fill="#E2D6BE" stroke="#D9CCB4" stroke-width="2" stroke-linejoin="round"/>
+          <line x1="145.4" y1="197.8" x2="465.4" y2="197.8" stroke="#C2B498" stroke-width="1.8"/>
+          <rect x="130" y="210" width="320" height="260" fill="#EFE5D0" stroke="#D9CCB4" stroke-width="2"/>
+          <rect x="438" y="210" width="12" height="260" fill="#1A1510" opacity="0.035"/>
+          <polygon points="241,210 275,210 371,134 337,134" fill="#D6C9AE" stroke="#CBBEA3" stroke-width="1"/>
+          <polygon points="241,210 275,210 275,236 241,236" fill="#D6C9AE" stroke="#CBBEA3" stroke-width="1"/>
+          <line x1="258" y1="232" x2="258" y2="212" stroke="#E4D8C0" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+          <line x1="258" y1="208" x2="354" y2="132" stroke="#E4D8C0" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+          <g transform="translate(240.56,262.56) scale(0.9888)"><g stroke="#1A1510" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
+          <text x="290" y="414" text-anchor="middle" font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="14" letter-spacing="3.5" fill="#4F4638">TECXIA × WAHSUN</text>
+          <text transform="rotate(90 499 300)" x="499" y="300" text-anchor="middle" font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="12" letter-spacing="3" fill="#8A7F6D" opacity="0.85">TECXIA.COM</text>
         </svg>
       </div>
+      <span class="pkg-note">三层瓦楞 · 单色丝印 · 哑光无覆膜</span>
     </div>
     <div class="pkg-card">
       <span class="cap">封口贴 · seal sticker</span>
       <div class="pkg-fig">
-        <svg viewBox="0 0 240 240" style="width:100%;max-width:190px" role="img" aria-label="封口贴">
+        <svg viewBox="0 0 240 240" style="width:100%;max-width:200px" role="img" aria-label="封口贴">
           <circle cx="120" cy="120" r="116" fill="#151009"/>
-          <circle cx="120" cy="120" r="103" fill="none" stroke="#F1EADC" stroke-width="1.5" opacity="0.28"/>
-          <g transform="translate(72.30,72.30) scale(0.9546)"><g fill="none" stroke="#F7F2E9" stroke-width="13" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#F7F2E9"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
+          <circle cx="120" cy="120" r="108" fill="none" stroke="#F1EADC" stroke-width="1" opacity="0.14"/>
+          <circle cx="120" cy="120" r="99" fill="none" stroke="#F1EADC" stroke-width="1.5" opacity="0.28"/>
+          <path id="seal-top" d="M47.3 78 A84 84 0 0 1 192.7 78" fill="none"/>
+          <path id="seal-bot" d="M46.9 161.4 A84 84 0 0 0 193.1 161.4" fill="none"/>
+          <text font-family="'SF Mono',ui-monospace,Menlo,monospace" font-size="10.5" letter-spacing="2.4" fill="#F1EADC" opacity="0.92"><textPath href="#seal-top" startOffset="50%" text-anchor="middle">TECXIA × WAHSUN</textPath></text>
+          <text font-family="'SF Mono',ui-monospace,Menlo,monospace" font-size="9" letter-spacing="1.6" fill="#F1EADC" opacity="0.7"><textPath href="#seal-bot" startOffset="50%" text-anchor="middle">TECXIA.COM · EST. 2026</textPath></text>
+          <path d="M212 114.5 L217 120 L212 125.5 L207 120 Z" fill="#F1EADC" opacity="0.55"/>
+          <path d="M28 114.5 L33 120 L28 125.5 L23 120 Z" fill="#F1EADC" opacity="0.55"/>
+          <g transform="translate(82.50,82.50) scale(0.75)"><g fill="none" stroke="#F7F2E9" stroke-width="13" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#F7F2E9"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
         </svg>
       </div>
+      <span class="pkg-note">不干胶 · 哑光 · 直径 40mm</span>
     </div>
     <div class="pkg-card wide">
       <span class="cap">包装胶带 · tape（纹样平铺）</span>
@@ -552,36 +585,54 @@ footer{padding:72px 0 84px;border-top:1px solid var(--line)}
           <g transform="rotate(-2 300 70)"><rect x="14" y="36" width="572" height="72" fill="url(#tapepat)"/></g>
         </svg>
       </div>
+      <span class="pkg-note">牛皮纸胶带 · 宽 40mm · 单色印刷</span>
     </div>
     <div class="pkg-card wide">
       <span class="cap">随件卡 · packing card</span>
       <div class="pkg-fig" style="min-height:0;padding:34px 26px">
         <div class="mini-cards">
-          <div class="mini-card mcf">
-            <svg class="tk" viewBox="-10 -10 120 120"><use href="#tk"/></svg>
-            <span class="mcf-t">PACKING CARD</span>
-            <span class="mcf-s">随件卡</span>
+          <div class="mini-col">
+            <div class="mini-card mcf">
+              <svg class="tk" viewBox="-10 -10 120 120"><use href="#tk"/></svg>
+              <span class="mcf-t">PACKING CARD</span>
+              <span class="mcf-s">随件卡</span>
+            </div>
+            <span class="mini-lab">正面 · FRONT</span>
           </div>
-          <div class="mini-card mcb">
-            <span class="mcb-row">Design <svg class="tk" viewBox="-10 -10 120 120"><use href="#tk"/></svg> WAHSUN</span>
-            <span class="mcb-sn">PRODUCT —<br>VERSION —<br>SERIAL —</span>
-            <span class="mcb-cr">© 2026 TECXIA × WAHSUN</span>
+          <div class="mini-col">
+            <div class="mini-card mcb">
+              <span class="mcb-row">Design <svg class="tk" viewBox="-10 -10 120 120"><use href="#tk"/></svg> WAHSUN</span>
+              <span class="mcb-sn">PRODUCT —<br>VERSION —<br>SERIAL&nbsp;&nbsp;—</span>
+              <span class="mcb-cr">© 2026 TECXIA × WAHSUN</span>
+            </div>
+            <span class="mini-lab">背面 · BACK</span>
           </div>
         </div>
       </div>
+      <span class="pkg-note">350g 卡纸 · 双面印刷 · 90×54mm</span>
     </div>
     <div class="pkg-card">
       <span class="cap">纸袋 · paper bag</span>
       <div class="pkg-fig">
-        <svg viewBox="0 0 640 420" style="width:100%;max-width:340px" role="img" aria-label="纸袋">
-          <ellipse cx="320" cy="378" rx="200" ry="12" fill="#1A1510" opacity="0.08"/>
-          <path d="M235 132 C235 62, 405 62, 405 132" fill="none" stroke="#6E675A" stroke-width="7" stroke-linecap="round"/>
-          <rect x="150" y="130" width="340" height="28" fill="#E3D7BF" stroke="#D8CBB2" stroke-width="2"/>
-          <rect x="150" y="158" width="340" height="206" fill="#EFE5D2" stroke="#D8CBB2" stroke-width="2"/>
-          <g transform="translate(268.86,197.86) scale(1.0228)"><g fill="none" stroke="#1A1510" stroke-width="13" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
-          <text x="320" y="342" text-anchor="middle" font-family="'SF Mono',ui-monospace,Menlo,monospace" font-size="14" letter-spacing="4" fill="#4F4638">TECXIA.COM</text>
+        <svg viewBox="0 0 680 540" style="width:100%;max-width:380px" role="img" aria-label="纸袋">
+          <ellipse cx="330" cy="486" rx="185" ry="11" fill="#1A1510" opacity="0.11"/>
+          <path d="M240 196 C240 114 420 114 420 196" fill="none" stroke="#8A7F6D" stroke-width="4" stroke-linecap="round" opacity="0.42"/>
+          <path d="M260 196 C260 140 400 140 400 196" fill="none" stroke="#6E675A" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M170 195 Q170 180 185 180 L475 180 Q490 180 490 195 L490 210 L170 210 Z" fill="#E1D2B4" stroke="#CFBFA2" stroke-width="2"/>
+          <circle cx="260" cy="187" r="5.6" fill="none" stroke="#F5EFE3" stroke-width="1.3" opacity="0.75"/>
+          <circle cx="260" cy="187" r="3.6" fill="#6E675A" opacity="0.85"/>
+          <circle cx="400" cy="187" r="5.6" fill="none" stroke="#F5EFE3" stroke-width="1.3" opacity="0.75"/>
+          <circle cx="400" cy="187" r="3.6" fill="#6E675A" opacity="0.85"/>
+          <rect x="170" y="210" width="320" height="260" fill="#ECE0C8" stroke="#CDBB9E" stroke-width="2"/>
+          <rect x="172" y="210" width="50" height="260" fill="#E5D8BD"/>
+          <rect x="438" y="210" width="50" height="260" fill="#E5D8BD"/>
+          <line x1="222" y1="210" x2="222" y2="470" stroke="#D3C3A3" stroke-width="1.5" opacity="0.85"/>
+          <line x1="438" y1="210" x2="438" y2="470" stroke="#D3C3A3" stroke-width="1.5" opacity="0.85"/>
+          <g transform="translate(285.68,277.68) scale(0.8865)"><g stroke="#1A1510" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
+          <text x="330" y="417" text-anchor="middle" font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="13" letter-spacing="3.5" fill="#4F4638">TECXIA × WAHSUN</text>
         </svg>
       </div>
+      <span class="pkg-note">牛皮纸袋 · 纸带提手 · 单色印</span>
     </div>
     <div class="pkg-card">
       <span class="cap">交记纹样 · 内衬底纹</span>
@@ -683,7 +734,8 @@ footer{padding:72px 0 84px;border-top:1px solid var(--line)}
         <div class="asset-row"><a href="assets/packaging/tape-tile.svg">packaging/tape-tile.svg</a><span class="sz">胶带单元</span></div>
       </div>
       <div>
-        <div class="asset-row"><a href="assets/packaging/card-back.svg">packaging/card-back.svg</a><span class="sz">随件卡</span></div>
+        <div class="asset-row"><a href="assets/packaging/card-front.svg">packaging/card-front.svg</a><span class="sz">随件卡 · 正面</span></div>
+        <div class="asset-row"><a href="assets/packaging/card-back.svg">packaging/card-back.svg</a><span class="sz">随件卡 · 背面</span></div>
         <div class="asset-row"><a href="assets/packaging/bag.svg">packaging/bag.svg</a><span class="sz">纸袋</span></div>
       </div>
     </div>
@@ -696,7 +748,7 @@ footer{padding:72px 0 84px;border-top:1px solid var(--line)}
 <footer>
   <div class="wrap foot-inner">
     <span class="lockup md"><span class="w">TECXIA</span><svg class="tk g"><use href="#tk"/></svg><span class="w">WAHSUN</span></span>
-    <span class="foot-cr">© 2026 TECXIA × WAHSUN · 保留所有权利 · BRAND GUIDELINES V2.0</span>
+    <span class="foot-cr">© 2026 TECXIA × WAHSUN · 保留所有权利 · BRAND GUIDELINES V2.1</span>
   </div>
 </footer>
 

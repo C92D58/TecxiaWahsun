@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1063 638" width="1063" height="638" role="img" aria-label="包装 · 随件卡正面（记号面）">
+  <rect width="1063" height="638" fill="#F7F2E9"/>
+  <g transform="translate(468.45,198.95) scale(1.261)"><g stroke="#1A1510" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
+  <text x="531.5" y="428" text-anchor="middle" font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="16" letter-spacing="4" fill="#8A7F6D">PACKING CARD</text>
+  <text x="531.5" y="462" text-anchor="middle" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#4F4638">随件卡</text>
+</svg>

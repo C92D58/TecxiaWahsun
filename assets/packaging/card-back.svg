@@ -1,17 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1063 638" width="1063" height="638" role="img" aria-label="包装 · 随件卡背面（85×51mm 级模板）">
-  <rect width="1063" height="638" fill="#F7F2E9"/>
-  <rect x="48" y="48" width="967" height="542" rx="20" fill="none" stroke="#E0D5C2" stroke-width="2"/>
-  <g transform="translate(78.43,96.43) scale(0.5114)"><g stroke="#1A1510" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#1A1510"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
-  <text x="963" y="128" text-anchor="end" font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="15" letter-spacing="2.5" fill="#8A7F6D">PACKING CARD · 随件卡</text>
-  <g font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="16" letter-spacing="1.2" fill="#4F4638">
-    <text x="104" y="288">PRODUCT &#160;&#160;______________________</text>
-    <text x="104" y="326">VERSION &#160;&#160;______________________</text>
-    <text x="104" y="364">SERIAL &#160;&#160;______________________</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1063 638" width="1063" height="638" role="img" aria-label="包装 · 随件卡背面（署名面）">
+  <rect width="1063" height="638" fill="#151009"/>
+  <text x="387" y="298" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="30" letter-spacing="2" fill="#F1EADC">Design</text>
+  <g transform="translate(504.66,274.66) scale(0.3068)"><g stroke="#F1EADC" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#F1EADC"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
+  <text x="554" y="298" font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="30" letter-spacing="2" fill="#F1EADC">WAHSUN</text>
+  <g font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="14" letter-spacing="1.5" fill="#F1EADC" opacity="0.6">
+    <g text-anchor="end">
+      <text x="555" y="380">PRODUCT</text>
+      <text x="555" y="415">VERSION</text>
+      <text x="555" y="450">SERIAL</text>
+    </g>
+    <g text-anchor="start">
+      <text x="568" y="380">—</text>
+      <text x="568" y="415">—</text>
+      <text x="568" y="450">—</text>
+    </g>
   </g>
-  <g font-family="-apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" fill="#4F4638">
-    <text x="434" y="512" font-size="22" letter-spacing="2">Design</text>
-    <text x="539" y="512" font-size="22" letter-spacing="2">WAHSUN</text>
-  </g>
-  <g transform="translate(515.42,493.92) scale(0.2216)"><g stroke="#4F4638" stroke-width="13" fill="none" stroke-linecap="butt"><path d="M9 9 L91 91"/><path d="M91 9 L9 91"/></g><g fill="#4F4638"><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,9) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,91) rotate(-45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(91,9) rotate(45)"/><rect x="-20" y="-6.5" width="40" height="13" rx="2.6" transform="translate(9,91) rotate(45)"/></g></g>
-  <text x="531.5" y="570" text-anchor="middle" font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="13" letter-spacing="1.4" fill="#8A7F6D">© 2026 TECXIA × WAHSUN · 保留所有权利</text>
+  <text x="531.5" y="560" text-anchor="middle" font-family="'SF Mono', ui-monospace, Menlo, monospace" font-size="13" letter-spacing="1.4" fill="#F1EADC" opacity="0.5">© 2026 TECXIA × WAHSUN</text>
 </svg>

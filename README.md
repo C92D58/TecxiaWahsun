@@ -1,4 +1,4 @@
-# TECXIA × WAHSUN — 品牌包 v2.0
+# TECXIA × WAHSUN — 品牌包 v2.1
 
 TECXIA 工作室与其设计署名 WAHSUN 的完整品牌资产：标志、交记记号、色彩与字体令牌、产品署名与包装、应用模板与品牌规范手册。
 
@@ -22,11 +22,12 @@ TecxiaWahsun/
 │   ├── mark-cross-paper.svg    # 交记记号（反白）
 │   ├── favicon.svg             # 站点图标（16px 优化）
 │   ├── pattern-cross.svg       # 辅助纹样（交记底纹）
-│   ├── packaging/              # 包装资产（v2 新增）
-│   │   ├── box.svg             # 邮寄盒
-│   │   ├── seal-sticker.svg    # 封口贴
+│   ├── packaging/              # 包装资产（v2.1 重制）
+│   │   ├── box.svg             # 邮寄盒（3/4 视角 · 封箱胶带）
+│   │   ├── seal-sticker.svg    # 封口贴（环形字）
 │   │   ├── tape-tile.svg       # 胶带单元（可平铺）
-│   │   ├── card-back.svg       # 随件卡
+│   │   ├── card-front.svg      # 随件卡 · 正面（记号面）
+│   │   ├── card-back.svg       # 随件卡 · 背面（署名面）
 │   │   └── bag.svg             # 纸袋
 │   └── png/                    # 高分辨率 PNG（透明底）
 ├── tokens/
@@ -52,7 +53,7 @@ TecxiaWahsun/
 
 **印刷 / 办公**：使用 `assets/png/` 高分辨率版本（2560px 级），或直接将 SVG 交付印厂（字标转外框后输出）。
 
-**包装**：`assets/packaging/` 内为邮寄盒、封口贴、胶带单元与随件卡；胶带单元可直接平铺；封口贴与随件卡为 300dpi 级模板。
+**包装**：`assets/packaging/` 内为邮寄盒、封口贴、胶带单元、随件卡（正/背双面）与纸袋；胶带单元可直接平铺；封口贴与随件卡为 300dpi 级模板。
 
 **名片与邮件**：`applications/` 内为 300dpi 级 SVG 模板与签名 HTML 源码，按注释替换个人信息即可。
 
@@ -80,4 +81,4 @@ TecxiaWahsun/
 
 ---
 
-*TECXIA × WAHSUN — brand package v2.0. The conjunction is the cross-mark glyph (two crossed strokes, four round-cornered end bars) or "×" (U+00D7); never the letter x. Live handbook: https://brand.tecxia.com*
+*TECXIA × WAHSUN — brand package v2.1. The conjunction is the cross-mark glyph (two crossed strokes, four round-cornered end bars) or "×" (U+00D7); never the letter x. Live handbook: https://brand.tecxia.com*
